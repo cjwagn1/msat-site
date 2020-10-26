@@ -2,8 +2,10 @@ import React from "react";
 import "./App.css";
 import "antd/dist/antd.css";
 import styled, { AnyStyledComponent } from "styled-components";
-import Nav from "./components/common/Nav/Nav";
-import NavLayout from "./components/sections/NavLayout";
+
+import Nav from "./components/common/Landing/LandingPage";
+
+
 import { Route, Switch } from "react-router-dom";
 
 const Example: AnyStyledComponent = styled.div``;
@@ -20,7 +22,9 @@ const MainContent = () => {
 export default () => {
 	return (
 		<div>
-			<NavLayout />
+
+			<Nav />
+
 		</div>
 	);
 };
